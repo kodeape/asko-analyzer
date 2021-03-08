@@ -135,16 +135,6 @@ def get_keys(year_d):
     first_csv_d = first_month_d[months[0]]
     return list(first_csv_d.keys())
 
-'''
-def generate_array(rows, cols, filler = ""):
-    arr = []
-    for row in range(rows):
-        arr.append([])
-        for col in range(cols):
-            arr[row].append(filler)
-    return arr
-'''
-
 def format_to_array(year_d):
     keys = get_keys(year_d)[1:]
     cols = len(keys)
